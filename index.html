@@ -1,0 +1,45 @@
+<html ng-app="vehicleApp">
+
+<head>
+  <meta charset="utf8" />
+  <title>get Sctript Results</title>
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+</head>
+
+<body>
+  <form name='vehicleForm' ng-submit="submit()" ng-controller="vehicleController">
+    <div>
+
+      <label for="multipleSelect"> Multiple select: </label>
+      <br>
+      <select name="multipleSelect" id="multipleSelect" ng-model="data.multipleSelect" multiple>
+        <option value="option-1">Option 1</option>
+        <option value="option-2">Option 2</option>
+        <option value="option-3">Option 3</option>
+      </select>
+
+
+      <label for="mileageFrom"> Mileage from: </label>
+      <br>
+      <input name="mileageFrom" type="text" ng-model="data.mileageFrom">
+      <br>
+      <label for="mileageTo"> Mileage to: </label>
+      <br>
+      <input name="mileageTo" type="text" ng-model="data.mileageTo">
+
+
+
+      <br>
+      <tt>data = {{data | json}}</tt>
+      <br/>
+
+      <input type="submit" id="submit" value="Submit" />
+      <a ng-href="{{ fileUrl }}" download="file.txt">download</a>
+    </div>
+
+  </form>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="app.js"></script>
+
+</html>

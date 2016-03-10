@@ -1,0 +1,16 @@
+{
+  "vehicles": [
+    {
+      "vehicleId": "vid-1",
+      "type": "Audi"
+    },
+    {
+      "vehicleId": "vid-2",
+      "type": "VW"
+    },
+    {
+      "vehicleId": "vid-3",
+      "type": "BMW"
+    }
+  ]
+}
