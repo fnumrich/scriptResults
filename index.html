@@ -10,6 +10,7 @@
   <form name='vehicleForm' ng-submit="submit()" ng-controller="vehicleController">
     <div>
 
+      <hr>
       <label for="multipleSelect"> Multiple select: </label>
       <br>
       <select name="multipleSelect" id="multipleSelect" ng-model="data.multipleSelect" multiple>
@@ -17,12 +18,13 @@
         <option value="option-2">Option 2</option>
         <option value="option-3">Option 3</option>
       </select>
-
-
+      <br>
+      <hr>
       <label for="mileageFrom"> Mileage from: </label>
       <br>
       <input name="mileageFrom" type="text" ng-model="data.mileageFrom">
       <br>
+      <hr>
       <label for="mileageTo"> Mileage to: </label>
       <br>
       <input name="mileageTo" type="text" ng-model="data.mileageTo">
@@ -30,11 +32,12 @@
 
 
       <br>
+      <hr>
       <tt>data = {{data | json}}</tt>
       <br/>
 
+      <hr>
       <input type="submit" id="submit" value="Submit" />
-      <a ng-href="{{ fileUrl }}" download="file.txt">download</a>
     </div>
 
   </form>
